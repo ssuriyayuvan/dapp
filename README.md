@@ -1,15 +1,23 @@
 # Basic Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+**Dapp with react and hardhat framework for solidity**
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```
+git clone git@github.com:ssuriyayuvan/dapp.git
+cd dapp
+npm install
+npm install -g hardhat
+cd front-end
+npm install
+cd ../
+
+# Solidity
+npx hardhat compile   # for compile soldity contract
+npx hardhat node # it run one node on our local
+npx hardhat run scripts/sample-script.js --network localhost # this one deploy our contract on local node
+
+# Front End
+cd front-end
+npm start
 ```
